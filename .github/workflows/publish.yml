@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
+          provenance: true
 
       - name: Publish package
         run: npm publish --access public
