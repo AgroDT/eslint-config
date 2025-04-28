@@ -4,7 +4,10 @@
   "license": "MIT",
   "type": "module",
   "main": "index.js",
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgroDT/eslint-config.git"
+  },
   "files": ["index.js"],
   "peerDependencies": {
     "eslint": ">= 9",
