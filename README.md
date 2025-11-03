@@ -2,7 +2,7 @@
 
 Standard ESLint configuration from AgroDT Lab for TypeScript, React, and Next.js projects.
 
-This package provides a base set of ESLint rules designed for use in projects with TypeScript and React, including integration with the GitLab formatter for output reporting.
+This package provides a base set of ESLint rules designed for use in projects with TypeScript and React.
 
 ## Installation
 
