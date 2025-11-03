@@ -1,5 +1,3 @@
-import reactRefresh from 'eslint-plugin-react-refresh';
-import reactHooks from 'eslint-plugin-react-hooks';
 import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import globals from 'globals';
@@ -8,7 +6,6 @@ import globals from 'globals';
 const config = [
   {ignores: ['dist', 'node_modules']},
   ...tseslint.configs.recommended,
-  reactRefresh.configs.recommended,
   {
     languageOptions: {
       ecmaVersion: 2020,
@@ -16,14 +13,8 @@ const config = [
     },
     plugins: {
       '@stylistic': stylistic,
-      'react-hooks': reactHooks,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'error',
-        {allowConstantExport: true},
-      ],
       'id-length': ['error', {min: 3, properties: 'never', exceptions: ['id', 'e', '_e', 'i', '_', 'fs']}],
       curly: ['error', 'all'],
       'arrow-body-style': 0,
