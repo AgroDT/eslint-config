@@ -1,10 +1,11 @@
 # @agrodt/eslint-config
 
+[![npm version](https://img.shields.io/npm/v/@agrodt/eslint-config.svg)](https://www.npmjs.com/package/@agrodt/eslint-config)
+[![npm downloads](https://img.shields.io/npm/dm/@agrodt/eslint-config.svg)](https://www.npmjs.com/package/@agrodt/eslint-config)
+![License](https://img.shields.io/npm/l/@agrodt/eslint-config.svg)
+
 Standard ESLint configuration from AgroDT Lab for TypeScript projects with
 optional support for React and Solid.
-
-This package provides a base set of ESLint rules designed for use in projects
-with TypeScript and (optionally) React or Solid.
 
 ## Installation
 
