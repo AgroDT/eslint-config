@@ -44,14 +44,10 @@
   "keywords": [
     "eslint",
     "eslint-config",
-    "typescript",
-    "react",
-    "lint",
-    "eslint-plugin",
     "eslint-rules",
-    "agrodt",
-    "code-quality",
-    "gitlab",
-    "eslint-typescript"
+    "lint",
+    "solid",
+    "react",
+    "typescript"
   ]
 }
