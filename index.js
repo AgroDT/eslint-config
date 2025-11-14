@@ -1,11 +1,14 @@
 import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
+import {importX} from 'eslint-plugin-import-x'
 import globals from 'globals';
 
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
   {ignores: ['dist', 'node_modules']},
   ...tseslint.configs.recommended,
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
     languageOptions: {
       ecmaVersion: 2020,
@@ -15,6 +18,22 @@ const config = [
       '@stylistic': stylistic,
     },
     rules: {
+      'import-x/order': ['error', {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      }],
+      'import-x/no-self-import': 'error',
+      'import-x/no-duplicates': ['error', {'prefer-inline': true}],
       'id-length': ['error', {min: 3, properties: 'never', exceptions: ['id', 'e', '_e', 'i', '_', 'fs']}],
       curly: ['error', 'all'],
       'arrow-body-style': 0,
