@@ -1,9 +1,11 @@
 import reactRefresh from 'eslint-plugin-react-refresh';
 import reactHooks from 'eslint-plugin-react-hooks';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
   reactRefresh.configs.recommended,
+  jsxA11y.flatConfigs.recommended,
   {
     plugins: {
       'react-hooks': reactHooks,
