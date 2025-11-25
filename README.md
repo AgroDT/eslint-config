@@ -57,7 +57,7 @@ export default config;
 Install the required additional dependencies:
 
 ```sh
-npm install --save-dev eslint-plugin-react-hooks eslint-plugin-react-refresh
+npm install --save-dev eslint-plugin-react-hooks eslint-plugin-react-refresh eslint-plugin-jsx-a11y
 ```
 
 And add the configuration:
@@ -87,7 +87,7 @@ export default config;
 Install the required additional dependencies:
 
 ```sh
-npm install --save-dev eslint-plugin-solid
+npm install --save-dev eslint-plugin-solid eslint-plugin-jsx-a11y
 ```
 
 And add the configuration:
