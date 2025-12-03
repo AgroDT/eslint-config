@@ -46,7 +46,6 @@ import agrodtConfig from '@agrodt/eslint-config';
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
   ...agrodtConfig,
-  {rules: {'@typescript-eslint/no-explicit-any': 'error'}},
 ];
 
 export default config;
@@ -73,7 +72,6 @@ const config = [
   ...agrodtReactConfig,
   {
     rules: {
-      '@typescript-eslint/no-explicit-any': 'error',
       'react-refresh/only-export-components': 'off',
     },
   },
