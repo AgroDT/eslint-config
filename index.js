@@ -37,7 +37,6 @@ const config = [
       'id-length': ['error', {min: 3, properties: 'never', exceptions: ['id', 'e', '_e', 'i', '_', 'fs']}],
       curly: ['error', 'all'],
       'arrow-body-style': 0,
-      '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/ban-ts-comment': 'off',
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/array-bracket-spacing': ['error', 'never'],
