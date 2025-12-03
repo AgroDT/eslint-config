@@ -76,7 +76,7 @@ const config = [
       '@stylistic/newline-per-chained-call': 'off',
       '@stylistic/object-curly-newline': ['error', {ObjectPattern: {multiline: true}}],
       '@stylistic/object-property-newline': ['error', {allowAllPropertiesOnSameLine: true}],
-      '@stylistic/operator-linebreak': ['error', 'before'],
+      '@stylistic/operator-linebreak': ['error', 'before', {'overrides': {'=': 'none'}}],
       '@stylistic/arrow-parens': ['error', 'as-needed'],
       '@stylistic/brace-style': 'error',
       '@stylistic/new-parens': ['error', 'always'],
