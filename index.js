@@ -1,7 +1,8 @@
-import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import {importX} from 'eslint-plugin-import-x'
+import {importX} from 'eslint-plugin-import-x';
+import perfectionist from 'eslint-plugin-perfectionist';
 import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
@@ -16,6 +17,7 @@ const config = [
     },
     plugins: {
       '@stylistic': stylistic,
+      perfectionist,
     },
     rules: {
       'import-x/order': ['error', {
@@ -138,10 +140,19 @@ const config = [
         logical: 'parens-new-line',
         prop: 'parens-new-line',
       }],
-      '@stylistic/jsx-sort-props': [2, {
-        shorthandLast: true,
-        noSortAlphabetically: true,
-        reservedFirst: true,
+      'perfectionist/sort-jsx-props': [2, {
+        type: 'unsorted',
+        customGroups: [
+          {
+            groupName: 'reserved',
+            elementNamePattern: '^(key|ref)$',
+          },
+        ],
+        groups: [
+          'reserved',
+          'prop',
+          'shorthand-prop',
+        ],
       }],
       '@stylistic/jsx-curly-newline': ['error', {
         multiline: 'forbid',
