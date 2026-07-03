@@ -12,7 +12,7 @@ const config = [
   importX.flatConfigs.typescript,
   {
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       globals: globals.browser,
     },
     plugins: {

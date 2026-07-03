@@ -16,8 +16,8 @@ npm install --save-dev @agrodt/eslint-config
 > [!NOTE]
 > Make sure you have the following installed:
 >
-> - eslint version 9 or higher
-> - typescript version 5.7 or higher
+> - eslint version 9 or 10
+> - typescript version 5.7 or higher, including 6.0.x
 
 If you don't have ESLint and TypeScript installed yet, you can install them
 with:
